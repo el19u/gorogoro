@@ -17,6 +17,12 @@ gem "bootsnap", require: false
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "factory_bot_rails"
+  gem "faker"
+  gem "pry"
+  gem "rspec-rails"
+  gem "rubocop-github"
+  gem "rubocop-rails", require: false
 end
 
 group :development do
