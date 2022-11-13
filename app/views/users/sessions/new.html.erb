@@ -1,0 +1,15 @@
+<div class="flex justify-center items-center h-screen">
+  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div>
+      <%= f.input :email, label: "Email", autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div>
+      <%= f.input :password, label: "password", autocomplete: "current-password" %>
+    </div>
+
+    <div>
+      <%= f.button :submit, "Log in" %>
+    </div>
+  <% end %>
+</div>
